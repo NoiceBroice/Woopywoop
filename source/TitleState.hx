@@ -166,8 +166,8 @@ class TitleState extends MusicBeatState
 		// logo.antialiasing = FlxG.save.data.antialiasing;
 		// add(logo);
 
-		FlxTween.tween(logoBl, {y: logoBl.y + 50}, 0.69, {ease: FlxEase.quadInOut, type: PINGPONG});
-		FlxTween.tween(logoBl, {x: logoBl.x + 15}, 2.5, {ease: FlxEase.quadInOut, type: PINGPONG});
+		FlxTween.tween(logoBl, {y: logoBl.y + 50}, 1, {ease: FlxEase.quadInOut, type: PINGPONG});
+		FlxTween.tween(logoBl, {x: logoBl.x + 25}, 2.5, {ease: FlxEase.quadInOut, type: PINGPONG});
 		// FlxTween.tween(logoBl, {"scale.x": 1.5, "scale.y": 1.5}, 0.09, {ease: FlxEase.quadOut, type: LOOPING, loopDelay: 0.4986, startDelay: 0.2});
 		// FlxTween.tween(logoBl, {"scale.x": 1, "scale.y": 1}, 0.09, {ease: FlxEase.quadOut, type: LOOPING, loopDelay: 0.4986, startDelay: 0.24});
 		FlxTween.tween(logoBl,{y: -100}, 1.4, {ease: FlxEase.expoInOut});

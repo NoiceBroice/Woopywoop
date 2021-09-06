@@ -460,8 +460,8 @@ class FreeplayState extends MusicBeatState
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
-			curDifficulty = 2;
-		if (curDifficulty > 2)
+			curDifficulty = 0;
+		if (curDifficulty > 0)
 			curDifficulty = 0;
 
 
@@ -498,12 +498,8 @@ class FreeplayState extends MusicBeatState
 		{
 			switch(songs[curSelected].diffs[0])
 			{
-				case "Easy":
-					curDifficulty = 0;
 				case "Normal":
-					curDifficulty = 1;
-				case "Hard":
-					curDifficulty = 2;
+					curDifficulty = 0;
 			}
 		}
 
